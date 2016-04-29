@@ -1,0 +1,10 @@
+{
+  "name": "mosaic.css",
+  "description": "Easy to use mosaic CSS grid system",
+  "main": "demo.html",
+  "author": "Jack NUMBER",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0"
+  }
+}

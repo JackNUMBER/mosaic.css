@@ -1,0 +1,44 @@
+$mosaic_col: 100 !default;
+$mosaic_row: 100 !default;
+$mosaic_gutter: 7 !default;
+
+$mosaic_nb_cols: 7 !default;
+$mosaic_nb_rows: 5 !default;
+
+@mixin tiles-sizes-positions-classes() {
+  @for $x from 0 to $mosaic_nb_cols {
+    @for $y from 0 to $mosaic_nb_rows {
+
+      // compute all sizes cases
+      $elm_width: ($mosaic_col * $x) + ($mosaic_gutter * ($x - 1));
+      $elm_height: ($mosaic_row * $y) + ($mosaic_gutter * ($y - 1));
+
+      .tile-#{$x}-#{$y} {
+        width: $elm_width + px;
+        height: $elm_height + px;
+      }
+
+      // compute all positions cases
+      $elm_x: ($mosaic_col * ($x)) + ($mosaic_gutter * ($x));
+      $elm_y: ($mosaic_row * ($y)) + ($mosaic_gutter * ($y));
+
+      .matx-#{$x}-#{$y} {
+        left: $elm_x + px;
+        top: $elm_y + px;
+      }
+    }
+  }
+}
+
+.mosaic-css {
+  @include tiles-sizes-positions-classes();
+
+  position: relative;
+  margin: 0;
+  width: (($mosaic_nb_cols * $mosaic_col) + (($mosaic_nb_cols - 1) * $mosaic_gutter)) + px;
+  height: (($mosaic_nb_rows * $mosaic_row) + (($mosaic_nb_rows - 1) * $mosaic_gutter)) + px;
+
+  .tile {
+    position: absolute;
+  }
+}

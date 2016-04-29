@@ -1,0 +1,15 @@
+.blue   { background: #2C82C9; }
+.red    { background: #FC6042; }
+.green  { background: #2CC990; }
+.yellow { background: #EEE657; }
+.orange { background: #FCB941; }
+.grey   { background: #727272; }
+
+.tile {
+    align-items: center;
+    color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    font: bold 28px sans-serif;
+    justify-content: center;
+}
+
