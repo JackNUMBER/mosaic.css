@@ -8,6 +8,15 @@ You can pick the `mosaic.css` file if you want to start quickly.
 * The `.tile-w-h` class defines the size of the tile (in number of column).
 * The `.matx-x-y` class defines the position of the tile (origin is top-left).
 
+![demo animation](http://i.imgur.com/gmMsHil.gif)
+
+## Demo
+You can run `demo.htm` in your browser.
+
+A demo here: http://codepen.io/jacknumber/pen/MyYgmw (this repo is more updated than this demo)
+
+You can check here for an animated demo: http://codepen.io/jacknumber/pen/MyYgmw
+
 ## I want to custom your code
 Do it!
 
@@ -24,4 +33,4 @@ If you want to build automatically run:
 
     gulp watch
 
-Feel free to create a pull request if you want to contribute.
+**Feel free to create a pull request if you want to contribute.**
