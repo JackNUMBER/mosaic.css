@@ -13,7 +13,7 @@ You can pick the `mosaic.css` file if you want to start quickly.
 ## Demo
 You can run `demo.htm` in your browser.
 
-A demo here: http://codepen.io/jacknumber/pen/MyYgmw (this repo is more updated than this demo)
+A demo here: http://codepen.io/jacknumber/pen/vCepw (this repo is more updated than this demo)
 
 You can check here for an animated demo: http://codepen.io/jacknumber/pen/MyYgmw
 
